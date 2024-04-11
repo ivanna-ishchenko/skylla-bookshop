@@ -19,14 +19,21 @@ interface SaleInfo {
   listPrice: ListPrice;
 }
 
-export interface Book {
+export interface IBook {
   id: string;
   volumeInfo: VolumeInfo;
-  saleInfo?: SaleInfo;
+  saleInfo: SaleInfo;
 }
 
-export interface BooksResponse {
+export interface IBooksResponse {
   kind: string;
   totalItems: number;
-  items: Book[];
+  items: IBook[];
+}
+
+export interface ICartItem {
+  id: string;
+  title: string;
+  quantity: number;
+  price: number;
 }
