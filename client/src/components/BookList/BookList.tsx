@@ -1,4 +1,4 @@
-import { IBook } from "../../types";
+import { IBook } from "../../../../shared/types";
 import BookItem from "./BookItem/BookItem";
 import "./BookList.scss";
 

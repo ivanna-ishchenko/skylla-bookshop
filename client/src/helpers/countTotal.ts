@@ -1,4 +1,4 @@
-import { ICartItem } from "../types";
+import { ICartItem } from "../../../shared/types";
 
 export const countTotal = (cartItems: ICartItem[]) =>
   cartItems

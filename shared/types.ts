@@ -1,6 +1,12 @@
+type MATURITY = "MATURE" | "NOT_MATURE";
+
 interface ImageLinks {
   smallThumbnail: string;
   thumbnail: string;
+}
+interface IndustryIdentifier {
+  type: string;
+  identifier: string;
 }
 
 interface VolumeInfo {
@@ -8,6 +14,8 @@ interface VolumeInfo {
   description: string;
   pageCount?: number;
   imageLinks?: ImageLinks;
+  maturityRating: MATURITY;
+  industryIdentifiers?: IndustryIdentifier[];
 }
 
 interface ListPrice {
@@ -23,12 +31,7 @@ export interface IBook {
   id: string;
   volumeInfo: VolumeInfo;
   saleInfo: SaleInfo;
-}
-
-export interface IBooksResponse {
-  kind: string;
-  totalItems: number;
-  items: IBook[];
+  openLibraryRevision?: number;
 }
 
 export interface ICartItem {

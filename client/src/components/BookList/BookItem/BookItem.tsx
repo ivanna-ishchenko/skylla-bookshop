@@ -1,5 +1,5 @@
 import React from "react";
-import { IBook } from "../../../types";
+import { IBook } from "../../../../../shared/types";
 import "./BookItem.scss";
 import { addItem } from "../../../store/cartSlice";
 import { useDispatch } from "react-redux";
@@ -10,7 +10,7 @@ interface BookItemProps {
 
 const BookItem: React.FC<BookItemProps> = ({ book }) => {
   const dispatch = useDispatch();
-  const { volumeInfo, saleInfo } = book;
+  const { volumeInfo, saleInfo, openLibraryRevision } = book;
 
   const handleAddToCart = () => {
     dispatch(addItem(book));
@@ -23,6 +23,11 @@ const BookItem: React.FC<BookItemProps> = ({ book }) => {
         <h2>{volumeInfo.title}</h2>
         <p className="description">{volumeInfo.description}</p>
         <div className="details-wrapper">
+          {openLibraryRevision && (
+            <p>
+              <b>Revisions:</b> {openLibraryRevision}
+            </p>
+          )}
           <p>
             <b>Pages:</b> {volumeInfo.pageCount}
           </p>

@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useState } from "react";
 import "./CartItem.scss";
-import { ICartItem } from "../../../types";
+import { ICartItem } from "../../../../../shared/types";
 import { useDispatch } from "react-redux";
 import { removeItem, updateItemQuantity } from "../../../store/cartSlice";
 import removeIcon from "./remove_icon.svg";
