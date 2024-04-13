@@ -14,7 +14,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "types": ["cypress"]
   },
-  "include": ["src", "../shared/types.ts"]
+  "include": ["src", "../shared/types.ts", "cypress/e2e/app.cy.ts"]
 }
