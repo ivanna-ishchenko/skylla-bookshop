@@ -15,7 +15,9 @@ const ShoppingCart: React.FC = () => {
         {cartItems.map((item) => (
           <CartItem key={item.id} item={item} />
         ))}
-        <div className="total-price">Total Price: ${countTotal(cartItems)}</div>
+        <div className="total-price">
+          Total Price: {countTotal(cartItems)} PLN
+        </div>
       </>
     </div>
   );

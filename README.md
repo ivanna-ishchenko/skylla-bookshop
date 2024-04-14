@@ -15,34 +15,34 @@ Follow these steps to run the application:
 
 1. **Install Dependencies**:
 
-   - Open a terminal.
-   - Navigate to the `client` directory:
-     ```
-     cd client
-     ```
-   - Install client-side dependencies:
-     ```
-     yarn install
-     ```
+- Open a terminal.
+- Navigate to the `client` directory:
+  ```
+  cd client
+  ```
+- Install client-side dependencies:
+  ```
+  yarn install
+  ```
 
 2. **Start the application**:
 
-   - Navigate to the `server` directory:
-     ```
-     cd ../server
-     ```
-   - Install server-side dependencies:
-     ```
-     yarn install
-     ```
-   - After installing dependencies, build the client application:
-     ```
-     yarn build
-     ```
-   - Start the server:
-     ```
-     yarn start
-     ```
+- Navigate to the `server` directory:
+  ```
+  cd ../server
+  ```
+- Install server-side dependencies:
+  ```
+  yarn install
+  ```
+- After installing dependencies, build the client application:
+  ```
+  yarn build
+  ```
+- Start the server:
+  ```
+  yarn start
+  ```
 
 3. **View the Application**:
    - Once the server is running, open your web browser and go to `http://localhost:3000` to view the application.
@@ -51,6 +51,7 @@ Follow these steps to run the application:
 
 To run cypress tests, you can use the following commands:
 
+- Make sure the app is runnig on `http://localhost:3000`
 - Navigate to the `client` directory:
   ```
   cd client

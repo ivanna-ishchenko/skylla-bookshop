@@ -16,6 +16,7 @@
     "serve": "ts-node index.ts"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2"
   }
 }
