@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import axios from "axios";
-import { IBook } from "../shared/types";
+import { IBook } from "../../shared/types";
 
 export const getBooks = async (req: Request, res: Response) => {
   try {

@@ -43,7 +43,7 @@ const CartItem: React.FC<IProps> = ({ item }) => {
           />
           {errorMessage && <p className="error-message">{errorMessage}</p>}
         </div>
-        <p className="total-price">${(item.price * quantity).toFixed(2)}</p>
+        <p className="total-price">{(item.price * quantity).toFixed(2)} PLN</p>
       </div>
       <button className="remove-btn" onClick={handleRemoveItem}>
         <img src={removeIcon} alt="Remove" />
