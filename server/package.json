@@ -11,9 +11,9 @@
     "typescript": "^5.4.4"
   },
   "scripts": {
-    "start": "ts-node index.ts",
-    "build": "cd ../client && yarn build",
-    "serve": "ts-node index.ts"
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "build-client": "cd ../client && yarn build"
   },
   "devDependencies": {
     "nodemon": "^3.1.0",
